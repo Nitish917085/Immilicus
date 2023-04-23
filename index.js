@@ -7,8 +7,13 @@ const mongoose = require("mongoose");
 const route = require("./routes");
 const { data } = require("./sample_data");
 
+const corsOrigin ={
+    origin:'http://localhost:3000', //or whatever port your frontend is using
+    credentials:true,            
+    optionSuccessStatus:200
+}
 app.use(express.json());
-app.use(cors({origin:"https://immilicus-frontend.onrender.com/",}))
+app.use(cors(corsOrigin))
 
 main().catch((err) => console.log(err));
 main().then((err) => {
