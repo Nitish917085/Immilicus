@@ -8,9 +8,7 @@ const route = require("./routes");
 const { data } = require("./sample_data");
 
 app.use(express.json());
-app.use(cors(
-    origin:"*"
-))
+app.use(cors())
 
 main().catch((err) => console.log(err));
 main().then((err) => {
