@@ -8,7 +8,7 @@ const route = require("./routes");
 const { data } = require("./sample_data");
 
 const corsOrigin ={
-    origin:'https://644522b9092a2526dc28c838--imaginative-mermaid-e77a41.netlify.app/', //or whatever port your frontend is using
+    origin:'*', //or whatever port your frontend is using
     credentials:true,            
     optionSuccessStatus:200
 }
