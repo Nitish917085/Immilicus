@@ -8,7 +8,7 @@ const route = require("./routes");
 const { data } = require("./sample_data");
 
 app.use(express.json());
-app.use(cors({origin:"https://bespoke-pavlova-a5c49f.netlify.app/",}))
+app.use(cors({origin:"https://immilicus-frontend.onrender.com/",}))
 
 main().catch((err) => console.log(err));
 main().then((err) => {
